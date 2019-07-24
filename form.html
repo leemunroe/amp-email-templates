@@ -1,0 +1,583 @@
+<!doctype html>
+<html ⚡4email>
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  	<style amp4email-boilerplate>body{visibility:hidden}</style>
+    <style amp-custom>
+
+    /* -------------------------------------
+    GLOBAL RESETS
+    ------------------------------------- */
+    
+    img {
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100%;
+    }
+    
+    .img-block {
+      display: block;
+    }
+    
+    body {
+      font-family: Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+      line-height: 1.4;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    
+    table {
+      border-collapse: separate;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      width: 100%;
+    }
+    
+    table td {
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    /* -------------------------------------
+    BODY & CONTAINER
+    ------------------------------------- */
+    
+    body {
+      background-color: #f6f6f6;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .body {
+      background-color: #f6f6f6;
+      width: 100%;
+    }
+    
+    .container {
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 0;
+      padding-top: 24px;
+      width: 600px;
+    }
+    
+    .content {
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 0;
+    }
+
+    /* -------------------------------------
+    HEADER, FOOTER, MAIN
+    ------------------------------------- */
+    
+    .main {
+      background: #fff;
+      border-radius: 4px;
+      width: 100%;
+    }
+    
+    .wrapper {
+      box-sizing: border-box;
+      padding: 24px;
+    }
+    
+    .content-block {
+      padding-top: 0;
+      padding-bottom: 24px;
+    }
+    
+    .flush-top {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    
+    .flush-bottom {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    
+    .header {
+      margin-bottom: 24px;
+      margin-top: 0;
+      width: 100%;
+    }
+    
+    .header > table {
+      min-width: 100%;
+    }
+    
+    .footer {
+      clear: both;
+      padding-top: 24px;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .footer td,
+    .footer p,
+    .footer span,
+    .footer a {
+      color: #999999;
+      font-size: 12px;
+      text-align: center;
+    }
+    
+    /* -------------------------------------
+    TYPOGRAPHY
+    ------------------------------------- */
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #222222;
+      font-family: Helvetica, sans-serif;
+      font-weight: 400;
+      line-height: 1.4;
+      margin: 0;
+    }
+    
+    h1 {
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 24px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    
+    h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    
+    h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    
+    h4 {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    
+    p,
+    ul,
+    ol {
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+    
+    p li,
+    ul li,
+    ol li {
+      list-style-position: outside;
+      margin-left: 16px;
+      padding: 0;
+      text-indent: 0;
+    }
+    
+    ul,
+    ol {
+      margin-left: 8px;
+      padding: 0;
+      text-indent: 0;
+    }
+    
+    a {
+      color: #3498db;
+      text-decoration: underline;
+    }
+
+    /* -------------------------------------
+    BUTTONS
+    ------------------------------------- */
+    
+    .btn {
+      box-sizing: border-box;
+      min-width: 100%;
+      width: 100%;
+    }
+    
+    .btn > tbody > tr > td {
+      padding-bottom: 16px;
+    }
+    
+    .btn table {
+      width: auto;
+    }
+    
+    .btn table td {
+      background-color: #ffffff;
+      border-radius: 4px;
+      text-align: center;
+    }
+    
+    .btn a, .btn button {
+      background-color: #ffffff;
+      border: solid 2px #3498db;
+      border-radius: 4px;
+      box-sizing: border-box;
+      color: #3498db;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0;
+      padding: 12px 24px;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+    
+    .btn-primary table td {
+      background-color: #3498db;
+    }
+    
+    .btn-primary a, .btn-primary button {
+      background-color: #ee5291;
+      border-color: #ee5291;
+      color: #ffffff;
+    }
+    
+    @media all {
+      .btn-primary table td:hover {
+        background-color: #ae2bca;
+      }
+      .btn-primary a:hover, .btn-primary button:hover {
+        background-color: #ae2bca;
+        border-color: #ae2bca;
+      }
+    }
+    
+    .btn-secondary table td {
+      background-color: transparent;
+    }
+    
+    .btn-secondary a {
+      background-color: transparent;
+      border-color: #3498db;
+      color: #3498db;
+    }
+    
+    @media all {
+      .btn-secondary a:hover {
+        border-color: #34495e;
+        color: #34495e;
+      }
+    }
+    
+    .btn-tertiary table td {
+      background-color: transparent;
+    }
+    
+    .btn-tertiary a {
+      background-color: transparent;
+      border-color: #ffffff;
+      color: #ffffff;
+    }
+
+    /* -------------------------------------
+    OTHER STYLES THAT MIGHT BE USEFUL
+    ------------------------------------- */
+    
+    .last {
+      margin-bottom: 0;
+    }
+    
+    .first {
+      margin-top: 0;
+    }
+    
+    .align-center {
+      text-align: center;
+    }
+    
+    .align-right {
+      text-align: right;
+    }
+    
+    .align-left {
+      text-align: left;
+    }
+    
+    .text-link {
+      color: #3498db;
+      text-decoration: underline;
+    }
+    
+    .clear {
+      clear: both;
+    }
+    
+    .mt0 {
+      margin-top: 0;
+    }
+    
+    .mb0 {
+      margin-bottom: 0;
+    }
+    
+    .preheader {
+      color: transparent;
+      display: none;
+      height: 0;
+      max-height: 0;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+      mso-hide: all;
+      visibility: hidden;
+      width: 0;
+    }
+    
+    .powered-by a {
+      text-decoration: none;
+    }
+    
+    .hr tr:first-of-type td,
+    .hr tr:last-of-type td {
+      height: 24px;
+      line-height: 24px;
+    }
+    
+    .hr tr:nth-of-type(2) td {
+      background-color: #f6f6f6;
+      height: 1px;
+      line-height: 1px;
+      width: 100%;
+    }
+    
+    /* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+    ------------------------------------- */
+    
+    @media only screen and (max-width: 640px) {
+      h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+      }
+      h2 {
+        font-size: 28px;
+        margin-bottom: 8px;
+      }
+      h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+      .main p,
+      .main ul,
+      .main ol,
+      .main td,
+      .main span {
+        font-size: 16px;
+      }
+      .wrapper {
+        padding: 8px;
+      }
+      .article {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      .content {
+        padding: 0;
+      }
+      .container {
+        padding: 0;
+        padding-top: 8px;
+        width: 100%;
+      }
+      .header {
+        margin-bottom: 8px;
+        margin-top: 0;
+      }
+      .main {
+        border-left-width: 0;
+        border-radius: 0;
+        border-right-width: 0;
+      }
+      .btn table {
+        max-width: 100%;
+        width: 100%;
+      }
+      .btn a {
+        font-size: 16px;
+        max-width: 100%;
+        width: 100%;
+      }
+      .img-responsive {
+        height: auto;
+        max-width: 100%;
+        width: auto;
+      }
+      .alert td {
+        border-radius: 0;
+        font-size: 16px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 16px;
+      }
+      .receipt,
+      .receipt-container {
+        width: 100%;
+      }
+      .hr tr:first-of-type td,
+      .hr tr:last-of-type td {
+        height: 16px;
+        line-height: 16px;
+      }
+    }
+
+    /* -------------------------------------
+    PRESERVE THESE STYLES IN THE HEAD
+    ------------------------------------- */
+    
+    @media all {
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+      .apple-link a {
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        text-decoration: none;
+      }
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+    }
+    </style>
+
+    <!--[if gte mso 9]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <!--
+    _     _             _                      _ _   _
+    | |   | |           | |                    (_) | (_)
+    | |__ | |_ _ __ ___ | | ___ _ __ ___   __ _ _| |  _  ___
+    | '_ \| __| '_ ` _ \| |/ _ \ '_ ` _ \ / _` | | | | |/ _ \
+    | | | | |_| | | | | | |  __/ | | | | | (_| | | |_| | (_) |
+    |_| |_|\__|_| |_| |_|_|\___|_| |_| |_|\__,_|_|_(_)_|\___/
+    -->
+  </head>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+            <table class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <h1>AMP for Email Form</h1>
+                        <form method="post" action-xhr="https://ampforemail.requestcatcher.com/">
+                            <div class="m1">
+                              <p>How would you rate this year's conference?</p>
+                      		  <p>
+                              <input type="radio" id="rating1" name="rating" value="3" on="change:step2.show" required>
+                              <label for="rating1">Great</label>
+                      
+                              <input type="radio" id="rating2" name="rating" value="2" on="change:step2.show">
+                              <label for="rating2">Not bad</label>
+                      
+                              <input type="radio" id="rating3" name="rating" value="1" on="change:step2.show">
+                              <label for="rating3">Meh</label>
+                              </p>
+                            </div>
+                            <p id="step2" hidden>
+                              <label for="info">Would you like to tell us more?</label>
+                              <textarea id="info" name="name" rows="5" cols="70"></textarea>
+                            </p>
+                          <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                          <tbody>
+                            <tr>
+                              <td align="left">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td><button type="submit" class="btn btn-primary">Send feedback</button></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                          <div class="m1" submit-success>
+                            Thank you for submitting feedback.
+                          </div>
+                        </form>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- END MAIN CONTENT AREA -->
+              </table>
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <span class="apple-link">Company Inc, 3 Abbey Road, San Francisco CA 94102</span>
+                    <br> Don't like these emails? <a href="http://htmlemail.io/blog">Unsubscribe</a>.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block powered-by">
+                    Powered by <a href="http://htmlemail.io">HTML Email</a>.
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- END FOOTER -->
+            
+<!-- END CENTERED WHITE CONTAINER --></div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
