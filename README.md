@@ -7,6 +7,8 @@
 * [HTML support](https://github.com/ampproject/amphtml/blob/master/spec/email/amp-email-html.md) for AMP emails
 * [CSS support](https://github.com/ampproject/amphtml/blob/master/spec/email/amp-email-css.md) for AMP emails
 
+_Note: The starting template used was a clone of [this HTML template](https://github.com/leemunroe/responsive-html-email-template). You do not necessarily need all the markup included in these templates for AMP emails to work correctly._
+
 ## Getting Started
 
 * Open the [Gmail AMP for Email Playground](https://amp.gmail.dev/playground/)
