@@ -1,6 +1,8 @@
 # Simple AMP for Email Templates
 
-[Read about AMP for Email here.](https://htmlemail.io/blog/getting-started-amp-for-email)
+* [Getting started with AMP for Email](https://htmlemail.io/blog/getting-started-amp-for-email)
+* [HTML support](https://github.com/ampproject/amphtml/blob/master/spec/email/amp-email-html.md) for AMP emails
+* [CSS support](https://github.com/ampproject/amphtml/blob/master/spec/email/amp-email-css.md) for AMP emails
 
 ## Getting Started
 
@@ -8,7 +10,7 @@
 * Copy/paste one of the templates and you'll see it rendered
 * Hit send and it will be sent to your email
 
-![image](https://user-images.githubusercontent.com/15963/61767757-1f1bdf80-ad9a-11e9-99b4-df623ea7fa96.png)
+![image](https://user-images.githubusercontent.com/15963/61768315-f5fc4e80-ad9b-11e9-969f-9df4208bacb0.png)
 
 ## You will need to configure your Gmail to receive AMP emails
 
