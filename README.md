@@ -1,7 +1,7 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/15963/61768669-f34e2900-ad9c-11e9-8831-8a7fb1975cd0.png" width="80" height="80" alt="AMP logo"></p>
 
 
-# Simple AMP for Email Templates
+# Simple Free AMP for Email Templates
 
 * [Getting started with AMP for Email](https://htmlemail.io/blog/getting-started-amp-for-email)
 * [HTML support](https://github.com/ampproject/amphtml/blob/master/spec/email/amp-email-html.md) for AMP emails
